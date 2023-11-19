@@ -1,0 +1,247 @@
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #574DA7;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 18px;
+}
+tr{
+    display: flex;
+    flex-direction: column;
+}
+button{
+    cursor: pointer;
+}
+.d-none{
+    display: none;
+}
+
+/*MAIN PAGE*/
+
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pokemon-main-page{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   margin: 40px;
+}
+.pokemon-main-page:hover{
+    transform: scale(1.1, 1.1);
+    transition: 0.5s ease-in-out;
+}
+.pokemon-main-page-box{
+    background-color: white;
+    height: 220px;
+    width: 220px;
+    border-radius: 15px;
+    border: 3px solid black;
+    cursor: pointer;
+}
+.pokemon-main-page-box-id{
+    font-size: 24px;
+}
+.pokemon-name{
+    margin-top: 0px;
+}
+.underground-button-section{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.load-more-button{
+    margin-right: 5px;
+}
+.back-to-top-button{
+    margin-left: 5px;
+}
+
+/*POPUP*/
+
+.pop-up-background{
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.body-pop-up{
+    height: 100vh;
+    overflow: hidden;
+}
+.pop-up-background{
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pop-up-pokemon-details{
+    height: 1000px;
+    max-height: 800px;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: scroll;
+    border: 5px solid black;
+}
+.pop-up-top-section{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.change-pokemon-button{
+    height: 30px;
+    border-radius: 25px;
+    background-color: rgb(253,194,13);
+}
+.change-pokemon-button:hover{
+    background-color: red;
+}
+.change-pokemon-button-clicked{
+    background-color: red;
+}
+.close-pop-up-button{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+.close-pop-up-button-img{
+    height: 30px;
+}
+.pop-up-underground-top-section{
+    background-image: url('img/popUpBackground.jpg');
+    transform: all 0.5s ease;
+    height: 500px;
+    width: 500px;
+}
+.pop-up-underground-img-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.pop-up-pokemon-img{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+}
+.pop-up-main-section-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 6px;
+}
+.pop-up-main-section{
+    margin-top: 10px;
+}
+.pop-up-pokemon-base-stats-section{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-left: 20px;
+}
+.pop-up-pokemon-body-section{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align:left;
+  margin-left: 20px;
+}
+
+/*HEADER*/
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header-image{
+    height: 200px;
+}
+.suggestionList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pokemon-search-page-box{
+    background-color: rgb(253,194,13);
+    height: 220px;
+    width: 220px;
+    border-radius: 15px;
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+/*FOOTER*/
+
+.footer{
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: #453d80;
+}
+.distance-footer{
+    height: 1px;
+    background-color: black;
+}
+.footer-link{
+    margin-left: 30px;
+    margin-right: 30px;
+    color: white;
+    text-decoration: none;
+}
+.footer-link:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 550px) {
+.pop-up-underground-top-section{
+    max-width: 400px;
+}
+}
+@media (max-width: 430px) {
+.pop-up-underground-top-section{
+    max-width: 350px;
+}
+.underground-button-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.load-more-button{
+    display: flex;
+    flex-direction: row;
+    
+   
+}
+}
+@media (max-width: 400px) {
+.header-image{
+    width: 320px;
+}
+}
+@media (max-width: 360px){
+.pop-up-underground-top-section{
+    max-width: 310px;
+}
+.change-pokemon-button-mediaquery{
+    width: 50px;
+    height: 35px;
+    font-size: 12px;
+}
+}
